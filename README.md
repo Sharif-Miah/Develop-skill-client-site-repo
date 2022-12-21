@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-<li>This project Live link:  [https://course-project-d75ef.web.app/] </li>
+<li>This project Live link:  [https://kaleidoscopic-sundae-e7a993.netlify.app/home] </li>
 <li>This project Client Site Code link: [https://github.com/programming-hero-web-course1/b610-learning-platform-client-side-farhan-sharif]</li>
 <li>This project Server Site Link: [https://github.com/programming-hero-web-course1/b610-lerning-platform-server-side-farhan-sharif] </li>
 
