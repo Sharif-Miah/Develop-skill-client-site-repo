@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { ColorRing } from 'react-loader-spinner';
 import { Link, useLoaderData } from 'react-router-dom';
 import AllCourse from '../AllCourse/AllCourse';
 import PrimiumCourse from '../PrimiumCourse/PrimiumCourse';
@@ -6,14 +7,32 @@ import PrimiumCourse from '../PrimiumCourse/PrimiumCourse';
 const Courses = () => {
     const coursees = useLoaderData();
     const [courses, setCourse] = useState([]);
+    const [loading, setLoading] = useState(true)
 
 
     //Course data show
     useEffect(() => {
         fetch('https://learn-skill-backend-farhan-sharif.vercel.app/courses')
             .then(res => res.json())
-            .then(data => setCourse(data))
+            .then(data => {
+                setCourse(data)
+                setLoading(false)
+            })
     }, [])
+
+    if (loading) {
+        return <div style={{height: '100px', width: '100px', margin: 'auto'}}>
+            <ColorRing
+                visible={true}
+                height="80"
+                width="80"
+                ariaLabel="blocks-loading"
+                wrapperStyle={{}}
+                wrapperClass="blocks-wrapper"
+                colors={['#e15b64', '#f47e60', '#f8b26a', '#abbd81', '#849b87']}
+            />
+        </div>
+    }
 
     return (
         <div>

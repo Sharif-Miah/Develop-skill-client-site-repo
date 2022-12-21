@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { FaBook, FaUser } from 'react-icons/fa';
 import { AuthContext } from '../../Context/ContextProvider';
 import './Header.css'
-import Toggle from '../Toggle/Toggle';
+// import Toggle from '../Toggle/Toggle';
 
 const Header = () => {
 
@@ -32,7 +32,7 @@ const Header = () => {
                     </ul>
                 </div>
                 <Link to='/home' className="btn btn-ghost normal-case text-xl"> <FaBook className='mr-3' /> Developed Skills</Link>
-                <Toggle />
+                
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">

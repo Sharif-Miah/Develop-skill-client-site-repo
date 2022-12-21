@@ -1,7 +1,8 @@
 import React, { createRef } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 import './AllCourse';
-import Pdf from 'react-to-pdf';
+// import {Pdf} from 'react-to-pdf';
+
 
 const ref = createRef();
 
@@ -26,14 +27,14 @@ const AllCourseOne = () => {
                         </div>
                     </a>
                     <div className="flex mr-8">
-                        <Pdf targetRef={ref} filename={`${title}.pdf`}>
+                        {/* <Pdf targetRef={ref} filename={`${title}.pdf`}>
                             {({ toPdf }) => (
                                 <a type="button" target="_blank"
                                     rel="noreferrer" onClick={toPdf} className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-amber-400 hover:bg-amber-500 hover:text-white dark:text-gray-900 mr-4 cursor-pointer">
                                     <button >Download PDF</button>
                                 </a>
                             )}
-                        </Pdf>
+                        </Pdf> */}
 
                         <Link to={`/premium/${data?.id}`} className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-amber-400 hover:bg-amber-500 hover:text-white dark:text-gray-900"><button type="button" >Get premium Access</button></Link>
 

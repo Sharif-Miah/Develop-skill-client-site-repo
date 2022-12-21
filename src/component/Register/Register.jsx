@@ -1,13 +1,10 @@
 import { GithubAuthProvider, GoogleAuthProvider } from 'firebase/auth';
 import React, { useContext, useState } from 'react';
-import toast from 'react-hot-toast';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Context/ContextProvider';
 
 const provider = new GoogleAuthProvider();
 const githubProvider = new GithubAuthProvider();
-const notify = () => toast.error('Please give a valid password')
-const notify1 = () => toast.success('Successful Register')
 
 const Register = () => {
     const [errors, setErrors] = useState({
@@ -17,6 +14,7 @@ const Register = () => {
     const [userInfo, setUserInfo] = useState({
         email: "", password: ""
     })
+    
     const { googleAuthProvider, githubAuthProvider, registerInprovider, updateUserProfile } = useContext(AuthContext)
 
     const navigate = useNavigate();

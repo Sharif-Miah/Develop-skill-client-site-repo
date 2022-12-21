@@ -1,18 +1,18 @@
-import React, { useContext } from 'react';
-import './Toggle.css'
+// import React, { useContext } from 'react';
+// import './Toggle.css'
 
-const Toggle = () => {
+// const Toggle = () => {
 
 
-    return (
-        <div>
-            <label className='switch'>
-                <input type="checkbox" />
-                <span className='slider'></span>
-            </label>
+//     return (
+//         <div>
+//             <label className='switch'>
+//                 <input type="checkbox" />
+//                 <span className='slider'></span>
+//             </label>
 
-        </div>
-    );
-};
+//         </div>
+//     );
+// };
 
-export default Toggle;
+// export default Toggle;
